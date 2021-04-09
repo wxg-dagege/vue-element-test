@@ -1,29 +1,22 @@
 <template>
   <div id="app">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <echarts-vue />
+    <zrender-two />
   </div>
 </template>
 
 <script>
-import echartsVue from './components/echarts.vue'
+//import echartsVue from './components/echarts.vue'
 // import HelloWorld from './components/HelloWorld.vue'
+import zrenderTwo from './components/zrenderfive.vue';
 
 export default {
   name: 'App',
   components: {
-    echartsVue
+    zrenderTwo
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

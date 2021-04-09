@@ -13,7 +13,8 @@
     "echarts": "^4.8.0",
     "element-ui": "^2.15.1",
     "vue": "^2.6.11",
-    "vue-axios": "^3.2.4"
+    "vue-axios": "^3.2.4",
+    "zrender": "^5.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
