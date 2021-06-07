@@ -6,6 +6,8 @@ import InfiniteLoading  from 'vue-infinite-loading';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 import echarts from 'echarts';
+import VueRouter from 'vue-router';
+import routes from './router';
 import {
   Pagination,
   Dialog,
@@ -176,6 +178,21 @@ Vue.config.productionTip = false
 
 Vue.use(VueAxios, axios);
 Vue.prototype.$echarts = echarts;
+
+Vue.use(VueRouter);
+const router = new VueRouter({
+  mode: 'history', //加上这个可以让地址栏中的#消失
+  routes: routes
+})
+
+router.beforeEach((to, from, next) => {
+  if(to.name == 'child1name' && to.params.id !== 'foo') {
+    console.log(to.params.id);
+    next('/one')
+  }
+  else  next()
+});
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')

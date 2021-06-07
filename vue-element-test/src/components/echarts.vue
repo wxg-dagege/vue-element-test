@@ -1,6 +1,10 @@
 <template>
     <div style="width:100%;height:800px;">
         <div style="width:100%;height:500px;" id="myChart"></div>
+        <router-link to="/two/f9o/child1">/two/foo/child1</router-link>
+        <router-link to="/two/bar/child2">/two/bar/child2</router-link>
+        <router-link to="/two/bar/child3">/two/bar/child3</router-link>
+        <router-link to="/two/bar/">/two/bar</router-link>
     </div>
 </template>
 

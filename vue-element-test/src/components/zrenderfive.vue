@@ -12,7 +12,9 @@ export default {
             zr: null
         };
     },
+    props: ["id"],
     mounted() {
+        console.log(this.id);
         this.zr = init(document.getElementById("main"));
 
         let w = this.zr.getWidth();
